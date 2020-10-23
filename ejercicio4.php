@@ -42,12 +42,53 @@
                 </div>
             </nav>
         </header>
+        <div class="container">
         <main>
+        <h1>Ejercicio 4</h1>
+        <p>Hacer un programa en PHP para ayudar a un trabajador de Postobón a saber cuál será su sueldo semanal, se sabe que, si trabaja 40 horas o menos, se le pagará $20000 por hora, pero si trabaja más de 40 horas entonces las horas extras se le pagarán a $25000 por hora.</p>
         
         </main>
-        <footer>
-        
-        </footer>
+        </div>
+        <footer class="page-footer font-small teal pt-4">
+
+
+<div class="container-fluid text-center text-md-left">
+
+  
+  <div class="row">
+
+    
+    <div class="col-md-6 mt-md-0 mt-3">
+
+      
+      <h5 class="text-uppercase font-weight-bold">Carlos Andrés Díaz Aguirre</h5>
+      
+
+    </div>
+    
+
+    <hr class="clearfix w-100 d-md-none pb-3">
+
+    
+    <div class="col-md-6 mb-md-0 mb-3">
+
+      
+      <h5 class="text-uppercase font-weight-bold">Esteban Barrientos Aguirre</h5>
+      
+
+    </div>
+    
+
+  </div>
+
+</div>
+
+<div class="footer-copyright text-center py-3">© 2020 Copyright:
+  <a href="https://www.cesde.edu.co/Paginas/tecnicos/procesos-tecnologicos-e-industriales/desarrollo-de-software-virtual.aspx"> Grupo Cerrado Intersoftware - CESDE</a>
+</div>
+
+
+</footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>

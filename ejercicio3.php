@@ -42,12 +42,60 @@
                 </div>
             </nav>
         </header>
+        <div class="container">
         <main>
+
+        <h3>Ejercicio 3</h3>
+        <p>3.Codificar un programa en PHP para la tienda Spring Step que tiene una promoción de descuento, esta dependerá del número de zapatos que se compren.</p>
+        <ul>
+            <li>Si son 3 pares se les dará un 10% de descuento al cliente sobre el total de la compra;</li>
+            <li> Si el número de zapatos es mayor 3 pares, pero menor o igual de 8 pares, se le otorga un 20% de descuento</li>
+            <li>si son más 8 pares de zapatos se otorgará un 50% de descuento. Defina la cantidad de variables que necesite, el costo de cada par de zapatos y establezca el valor total de la compra de zapatos.</li>
+        </ul>
+
         
         </main>
-        <footer>
-        
-        </footer>
+        </div>
+        <footer class="page-footer font-small teal pt-4">
+
+
+<div class="container-fluid text-center text-md-left">
+
+  
+  <div class="row">
+
+    
+    <div class="col-md-6 mt-md-0 mt-3">
+
+      
+      <h5 class="text-uppercase font-weight-bold">Carlos Andrés Díaz Aguirre</h5>
+      
+
+    </div>
+    
+
+    <hr class="clearfix w-100 d-md-none pb-3">
+
+    
+    <div class="col-md-6 mb-md-0 mb-3">
+
+      
+      <h5 class="text-uppercase font-weight-bold">Esteban Barrientos Aguirre</h5>
+      
+
+    </div>
+    
+
+  </div>
+
+</div>
+
+<div class="footer-copyright text-center py-3">© 2020 Copyright:
+  <a href="https://www.cesde.edu.co/Paginas/tecnicos/procesos-tecnologicos-e-industriales/desarrollo-de-software-virtual.aspx"> Grupo Cerrado Intersoftware - CESDE</a>
+</div>
+
+
+</footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
