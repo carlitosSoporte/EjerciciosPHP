@@ -36,6 +36,16 @@
                                 <a class="dropdown-item" href="ejercicio4.php">Ejercicio 4</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item active" href="ejercicio5.php">Ejercicio 5</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio6.php">Ejercicio 6</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio7.php">Ejercicio 7</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio8.php">Ejercicio 8</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio9.php">Ejercicio 9</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio10.php">Ejercicio 10</a>
                             </div>
                         </li>
                     </ul>
@@ -46,7 +56,7 @@
         <main>
         <h1>Ejercicio 5</h1>
         <p>Bancolombia contrata sus servicios de desarrollador para realizar un programa en PHP que permita:</p>
-<ul></ul>
+<ul>
     <li> Almacenar en variables información de nombre, teléfono dirección y salario de 5 usuarios de una sucursal llamada sucursal A.</li>
     <li>Sumar todos los salarios de los usuarios de la sucursal A en una sola variable llamada $sumatoriaSalarios y así poder comparar dicho valor con las sucursales B cuyo valor de salarios mensuales es de 40.000.000 y la sucursal C cuyo valor de salarios mensuales es de 32.000.000.</li>
 </ul>

@@ -36,6 +36,16 @@
                                 <a class="dropdown-item" href="ejercicio4.php">Ejercicio 4</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="ejercicio5.php">Ejercicio 5</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio6.php">Ejercicio 6</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio7.php">Ejercicio 7</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio8.php">Ejercicio 8</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio9.php">Ejercicio 9</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio10.php">Ejercicio 10</a>
                             </div>
                         </li>
                     </ul>

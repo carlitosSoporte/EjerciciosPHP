@@ -33,9 +33,9 @@
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="ejercicio3.php">Ejercicio 3</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item active" href="ejercicio4.php">Ejercicio 4</a>
+                                <a class="dropdown-item" href="ejercicio4.php">Ejercicio 4</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio5.php">Ejercicio 5</a>
+                                <a class="dropdown-item active" href="ejercicio5.php">Ejercicio 5</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="ejercicio6.php">Ejercicio 6</a>
                                 <div class="dropdown-divider"></div>
@@ -54,10 +54,12 @@
         </header>
         <div class="container">
         <main>
-        <h1>Ejercicio 4</h1>
-        <p>Hacer un programa en PHP para ayudar a un trabajador de Postobón a saber cuál será su sueldo semanal, se sabe que, si trabaja 40 horas o menos, se le pagará $20000 por hora, pero si trabaja más de 40 horas entonces las horas extras se le pagarán a $25000 por hora.</p>
-        
+        <h1>Ejercicio 8</h1>
+        <p>La federación nacional de fútbol necesita de sus servicios como desarrollador de software, para codificar una función en PHP que permita calcular la edad de los jugadores, de acuerdo al año de nacimiento de estos. Declare la función calcularEdad() y pruebe su funcionamiento. </p>
+        <hr>
+      
         </main>
+
         </div>
         <footer class="page-footer font-small teal pt-4">
 
