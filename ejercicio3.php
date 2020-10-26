@@ -62,6 +62,49 @@
             <li> Si el número de zapatos es mayor 3 pares, pero menor o igual de 8 pares, se le otorga un 20% de descuento</li>
             <li>si son más 8 pares de zapatos se otorgará un 50% de descuento. Defina la cantidad de variables que necesite, el costo de cada par de zapatos y establezca el valor total de la compra de zapatos.</li>
         </ul>
+        <form action="ejercicio3.php" method="POST">
+                <div class="row justify-content-center mt-5">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Ingresa cantidad de pares" name="zapatos">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Valor por par" name="valor">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-4" name="calcular">Calcular Total</button>
+            </form>
+            <?php
+            if(isset($_POST["calcular"])){
+              $zapatos = $_POST["zapatos"];
+              $valor = $_POST["valor"];
+              $valorBruto = $zapatos * $valor ;
+
+              if ($zapatos == 3) {
+                
+                $valorTotal = $valorBruto-($valorBruto *0.1);
+                echo("El Valor Total A pagar es: ".$valorTotal);
+              }
+              elseif($zapatos > 3 && $zapatos <= 8){
+                $valorTotal = $valorBruto-($valorBruto *0.2);
+                echo("El Valor Total A pagar es: ".$valorTotal);
+              }
+              elseif($zapatos > 8){
+                $valorTotal = $valorBruto-($valorBruto *0.5);
+                echo("El Valor Total A pagar es: ".$valorTotal);
+              }else{
+                echo("El Valor Total A pagar es: ".$valorBruto);
+              }
+
+              
+
+
+
+            }
+
+
+
+
+            ?>
 
         
         </main>
