@@ -104,7 +104,20 @@
                 echo("Tienes un sobrepeso grado 1");
                 
               }
-              else
+              elseif($imc >= 27 && $imc <= 29.9){
+                echo("Tienes un Sobre preso grado II o Preobesidad");
+              }
+              elseif ($imc >=30 && $imc <= 34.9) {
+                echo("Tienes una obesidad de tipo I");
+              }
+              elseif ($imc >=35 && $imc <= 39.9) {
+                echo("Tienes una obesidad de tipo II");
+              }
+              elseif ($imc >=40 && $imc <= 49.9) {
+                echo("Tienes una obesidad de tipo III o Mórbida");
+              }else{
+                echo("Tienes una Obesidad extrema o de Tipo IV");
+              }
 
 
 
