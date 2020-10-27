@@ -31,7 +31,7 @@
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="ejercicio2.php">Ejercicio 2</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio3.php">Ejercicio 3</a>
+                                <a class="dropdown-item active" href="ejercicio3.php">Ejercicio 3</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="ejercicio4.php">Ejercicio 4</a>
                                 <div class="dropdown-divider"></div>
@@ -61,12 +61,13 @@
         </header>
         <main>
             <div class="container-fluid">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-md-4">
-                        <div class="card">
+                        <div class="card mt-5">
                             
                             <div class="card-body">
-                                <h5 class="card-title text-center">Ejercicio 3</h5>
+                                <img src="recursos/pensando.jpg" class="card-img-top w-100 img-fluid" alt="pensando">
+                                <h5 class="card-title text-center mt-3">Ejercicio 3</h5>
                                 <p class="card-text">3.Codificar un programa en PHP para la tienda Spring Step que tiene una promoción de descuento, esta dependerá del número de zapatos que se compren.</p>
                                 </p>
                                 <ul class="card-text">
@@ -74,54 +75,75 @@
                                         <li> Si el número de zapatos es mayor 3 pares, pero menor o igual de 8 pares, se le otorga un 20% de descuento</li>
                                         <li>si son más 8 pares de zapatos se otorgará un 50% de descuento. Defina la cantidad de variables que necesite, el costo de cada par de zapatos y establezca el valor total de la compra de zapatos.</li>
                                 </ul>
-                                <p class="text-center card-text">
-                                    <a class="btn btn-primary">Mostrar solución</a>
-                                </p>
+                                
                             </div>
                             
                         </div>
                     </div>
-                    <div class="col-md-8">
-                            <form action="ejercicio3.php" method="POST">
-                                <div class="row justify-content-center mt-5">
-                                    <div class="col">
-                                        <input type="text" class="form-control" placeholder="Ingresa cantidad de pares" name="zapatos">
-                                    </div>
-                                    <div class="col">
-                                        <input type="text" class="form-control" placeholder="Valor por par" name="valor">
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary mt-4" name="calcular">Calcular Total</button>
-                            </form>
-                            <?php
-                                if(isset($_POST["calcular"])){
-                                    $zapatos = $_POST["zapatos"];
-                                    $valor = $_POST["valor"];
-                                    $valorBruto = $zapatos * $valor ;
+                    <div class="col-md-7">
+                            <div class="card mt-5">
+                            
+                                <div class="card-body text-center">
+                                    <img src="recursos/zapatos.jpg" class="card-img-top w-100 img-fluid col-md-6" alt="zapatos">
+                                    <form action="ejercicio3.php" method="POST">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-6 mt-2">
+                                                <input type="number" class="form-control" placeholder="Ingresa cantidad de pares" name="zapatos" id="zapatos">
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <input type="number" class="form-control" placeholder="Valor por par" name="valor" id="valor">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary mt-3 mb-5" name="calcular" id="calcular">Calcular Total</button>
+                                    </form>
+                                    <?php
+                                        function calcularTotal(){
+                                            $zapatos = $_POST["zapatos"];
+                                            $valor = $_POST["valor"];
+                                            $valorBruto = $zapatos * $valor ;
 
-                                    if ($zapatos == 3) {
+                                            if ($zapatos == 3) {
+                                                $descuento =10;
+                                                $valorTotal = $valorBruto-($valorBruto *0.1);
+                                            }
+                                            elseif($zapatos > 3 && $zapatos <= 8){
+                                                $descuento = 20;
+                                                $valorTotal = $valorBruto-($valorBruto *0.2);
+                                            }
+                                            
+                                            elseif($zapatos > 8){
+                                                $descuento = 50;
+                                                $valorTotal = $valorBruto-($valorBruto *0.5); 
+                                            }
+                                            
+                                            
+                                            echo("<div class=\"card text-center col-md-12\">"
+                                                    ."<p><img class=\"card-img-top w-100 img-fluid col-md-5\" src=\"recursos/zapatos.jpg\" alt=\"Zapatos\"></p>"
+                                                    ."<div class=\"card-body\">"
+                                                        ."<h4 class=\"text-success card-text\">Total Calculado!</h4>"
+                                                        ."<p class=\"text-info card-text\">El Valor Total A pagar es $".$valorTotal."</p>"
+                                                        ."<p class=\"text-info card-text\">La cantidad de pares de zapatos fue de ".$zapatos."</p>"
+                                                        ."<p class=\"text-info card-text\">Cada par tiene un precio de $".$valor."</p>"
+                                                        ."<p class=\"text-info card-text\">Su descuento fue de un ".$descuento."%</p>"
+                                                    ."</div>"
+                                                 ."</div>");
+                                        }
+                                    ?>
+                                    <?php if(isset($_POST["calcular"])): ?>
+                                        <?php if(!empty($_POST["zapatos"]) && !empty($_POST["valor"])): 
+                                            calcularTotal();
                                         
-                                        $valorTotal = $valorBruto-($valorBruto *0.1);
-                                        echo("El Valor Total A pagar es: ".$valorTotal);
-                                    }
-                                    elseif($zapatos > 3 && $zapatos <= 8){
-                                        $valorTotal = $valorBruto-($valorBruto *0.2);
-                                        echo("El Valor Total A pagar es: ".$valorTotal);
-                                    }
-                                    elseif($zapatos > 8){
-                                        $valorTotal = $valorBruto-($valorBruto *0.5);
-                                        echo("El Valor Total A pagar es: ".$valorTotal);
-                                    }else{
-                                        echo("El Valor Total A pagar es: ".$valorBruto);
-                                    }
-
-                                
-                                }
-
-
-
-
-                                ?>
+                                        ?>
+                                        <?php else: ?>
+                                            <p class="text-danger">Debe ingresar una cantidad pares de zapatos</p>
+                                            <p class="text-danger">Debe ingresar el valor de los pares de zapatos</p>
+                                        <?php endif ?>
+                                    <?php endif ?>
+                                </div>
+                            
+                            </div>
+                            
+                            
                     </div>
                 </div>
             </div>
