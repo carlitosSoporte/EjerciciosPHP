@@ -84,8 +84,10 @@
                             <div class="card mt-5">
                             
                                 <div class="card-body text-center">
+                                    <h4 class="text-center text-info">Tienda Spring Step</h4>
                                     <img src="recursos/zapatos.jpg" class="card-img-top w-100 img-fluid col-md-6" alt="zapatos">
                                     <form action="ejercicio3.php" method="POST">
+                                        
                                         <div class="row justify-content-center">
                                             <div class="col-md-6 mt-2">
                                                 <input type="number" class="form-control" placeholder="Ingresa cantidad de pares" name="zapatos" id="zapatos">
@@ -94,7 +96,7 @@
                                                 <input type="number" class="form-control" placeholder="Valor por par" name="valor" id="valor">
                                             </div>
                                         </div>
-                                        <button type="submit" class="btn btn-primary mt-3 mb-5" name="calcular" id="calcular">Calcular Total</button>
+                                        <button type="submit" class="btn btn-primary mt-3 mb-4" name="calcular" id="calcular">Calcular Total</button>
                                     </form>
                                     <?php
                                         function calcularTotal(){
