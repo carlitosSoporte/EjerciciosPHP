@@ -24,131 +24,137 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Ejercicios
+                            Ejercicios 1-5
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="ejercicio1.php">Ejercicio 1</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="ejercicio2.php">Ejercicio 2</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item active" href="ejercicio3.php">Ejercicio 3</a>
+                                <a class="dropdown-item" href="ejercicio3.php">Ejercicio 3</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="ejercicio4.php">Ejercicio 4</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="ejercicio5.php">Ejercicio 5</a>
+                            </div>
+                        </li>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ejercicios 6-10
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="ejercicio1.php">Ejercicio 6</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio6.php">Ejercicio 6</a>
+                                <a class="dropdown-item" href="ejercicio2.php">Ejercicio 7</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio7.php">Ejercicio 7</a>
+                                <a class="dropdown-item" href="ejercicio3.php">Ejercicio 8</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio8.php">Ejercicio 8</a>
+                                <a class="dropdown-item" href="ejercicio4.php">Ejercicio 9</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio9.php">Ejercicio 9</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio10.php">Ejercicio 10</a>
+                                <a class="dropdown-item" href="ejercicio5.php">Ejercicio 10</a>
                             </div>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <div class="container">
         <main>
-
-        <h3>Ejercicio 3</h3>
-        <p>3.Codificar un programa en PHP para la tienda Spring Step que tiene una promoción de descuento, esta dependerá del número de zapatos que se compren.</p>
-        <ul>
-            <li>Si son 3 pares se les dará un 10% de descuento al cliente sobre el total de la compra;</li>
-            <li> Si el número de zapatos es mayor 3 pares, pero menor o igual de 8 pares, se le otorga un 20% de descuento</li>
-            <li>si son más 8 pares de zapatos se otorgará un 50% de descuento. Defina la cantidad de variables que necesite, el costo de cada par de zapatos y establezca el valor total de la compra de zapatos.</li>
-        </ul>
-        <form action="ejercicio3.php" method="POST">
-                <div class="row justify-content-center mt-5">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Ingresa cantidad de pares" name="zapatos">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Ejercicio 3</h5>
+                                <p class="card-text">3.Codificar un programa en PHP para la tienda Spring Step que tiene una promoción de descuento, esta dependerá del número de zapatos que se compren.</p>
+                                </p>
+                                <ul class="card-text">
+                                        <li>Si son 3 pares se les dará un 10% de descuento al cliente sobre el total de la compra;</li>
+                                        <li> Si el número de zapatos es mayor 3 pares, pero menor o igual de 8 pares, se le otorga un 20% de descuento</li>
+                                        <li>si son más 8 pares de zapatos se otorgará un 50% de descuento. Defina la cantidad de variables que necesite, el costo de cada par de zapatos y establezca el valor total de la compra de zapatos.</li>
+                                </ul>
+                                <p class="text-center card-text">
+                                    <a class="btn btn-primary">Mostrar solución</a>
+                                </p>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Valor por par" name="valor">
+                    <div class="col-md-8">
+                            <form action="ejercicio3.php" method="POST">
+                                <div class="row justify-content-center mt-5">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Ingresa cantidad de pares" name="zapatos">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Valor por par" name="valor">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-4" name="calcular">Calcular Total</button>
+                            </form>
+                            <?php
+                                if(isset($_POST["calcular"])){
+                                    $zapatos = $_POST["zapatos"];
+                                    $valor = $_POST["valor"];
+                                    $valorBruto = $zapatos * $valor ;
+
+                                    if ($zapatos == 3) {
+                                        
+                                        $valorTotal = $valorBruto-($valorBruto *0.1);
+                                        echo("El Valor Total A pagar es: ".$valorTotal);
+                                    }
+                                    elseif($zapatos > 3 && $zapatos <= 8){
+                                        $valorTotal = $valorBruto-($valorBruto *0.2);
+                                        echo("El Valor Total A pagar es: ".$valorTotal);
+                                    }
+                                    elseif($zapatos > 8){
+                                        $valorTotal = $valorBruto-($valorBruto *0.5);
+                                        echo("El Valor Total A pagar es: ".$valorTotal);
+                                    }else{
+                                        echo("El Valor Total A pagar es: ".$valorBruto);
+                                    }
+
+                                
+                                }
+
+
+
+
+                                ?>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary mt-4" name="calcular">Calcular Total</button>
-            </form>
-            <?php
-            if(isset($_POST["calcular"])){
-              $zapatos = $_POST["zapatos"];
-              $valor = $_POST["valor"];
-              $valorBruto = $zapatos * $valor ;
-
-              if ($zapatos == 3) {
-                
-                $valorTotal = $valorBruto-($valorBruto *0.1);
-                echo("El Valor Total A pagar es: ".$valorTotal);
-              }
-              elseif($zapatos > 3 && $zapatos <= 8){
-                $valorTotal = $valorBruto-($valorBruto *0.2);
-                echo("El Valor Total A pagar es: ".$valorTotal);
-              }
-              elseif($zapatos > 8){
-                $valorTotal = $valorBruto-($valorBruto *0.5);
-                echo("El Valor Total A pagar es: ".$valorTotal);
-              }else{
-                echo("El Valor Total A pagar es: ".$valorBruto);
-              }
-
-              
-
-
-
-            }
-
-
-
-
-            ?>
-
+            </div>
         
         </main>
-        </div>
-        <footer class="page-footer font-small teal pt-4">
-
-
-<div class="container-fluid text-center text-md-left">
-
-  
-  <div class="row">
-
-    
-    <div class="col-md-6 mt-md-0 mt-3">
-
-      
-      <h5 class="text-uppercase font-weight-bold">Carlos Andrés Díaz Aguirre</h5>
-      
-
-    </div>
-    
-
-    <hr class="clearfix w-100 d-md-none pb-3">
-
-    
-    <div class="col-md-6 mb-md-0 mb-3">
-
-      
-      <h5 class="text-uppercase font-weight-bold">Esteban Barrientos Aguirre</h5>
-      
-
-    </div>
-    
-
-  </div>
-
-</div>
-
-<div class="footer-copyright text-center py-3">© 2020 Copyright:
-  <a href="https://www.cesde.edu.co/Paginas/tecnicos/procesos-tecnologicos-e-industriales/desarrollo-de-software-virtual.aspx"> Grupo Cerrado Intersoftware - CESDE</a>
-</div>
-
-
-</footer>
+        <footer class="bg-dark text-white mt-5">
+          <div class="contaner">
+            <div class="row justify-content-around text-center ">
+              <div class="col-md-3 mt-5">
+                <img src="recursos/creador1.jpeg" alt="creador Carlos Diaz" class="img-fluid w-100 rounded-circle">
+                <p>Carlos Andres Diaz Aguirre ©</p>
+                <p>andrez1915@gmail.com</p>
+                <p>Medellin - Colombia</p>
+                <p>2020</p>
+              </div>
+              <div class="col-md-3 mt-5">
+              <img src="recursos/creador1.jpeg" alt="creador Carlos Diaz" class="img-fluid w-100 rounded-circle">
+                <p>Esteban Barrientos ©</p>
+                <p>EstebanBarrientos@gmail.com</p>
+                <p>Medellin - Colombia</p>
+                <p>2020</p>
+              </div>
+            </div>
+            <div class="row justify-content-center text-center">
+              <div class="col-md-8">
+                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                  <a href="https://www.cesde.edu.co/Paginas/tecnicos/procesos-tecnologicos-e-industriales/desarrollo-de-software-virtual.aspx"> Grupo Cerrado Intersoftware - CESDE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>

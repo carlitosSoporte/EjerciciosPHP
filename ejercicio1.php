@@ -24,10 +24,10 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Ejercicios
+                            Ejercicios 1-5
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item active" href="ejercicio1.php">Ejercicio 1</a>
+                                <a class="dropdown-item" href="ejercicio1.php">Ejercicio 1</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="ejercicio2.php">Ejercicio 2</a>
                                 <div class="dropdown-divider"></div>
@@ -36,78 +36,60 @@
                                 <a class="dropdown-item" href="ejercicio4.php">Ejercicio 4</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="ejercicio5.php">Ejercicio 5</a>
+                            </div>
+                        </li>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ejercicios 6-10
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="ejercicio1.php">Ejercicio 6</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio6.php">Ejercicio 6</a>
+                                <a class="dropdown-item" href="ejercicio2.php">Ejercicio 7</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio7.php">Ejercicio 7</a>
+                                <a class="dropdown-item" href="ejercicio3.php">Ejercicio 8</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio8.php">Ejercicio 8</a>
+                                <a class="dropdown-item" href="ejercicio4.php">Ejercicio 9</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio9.php">Ejercicio 9</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio10.php">Ejercicio 10</a>
+                                <a class="dropdown-item" href="ejercicio5.php">Ejercicio 10</a>
                             </div>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <div class="container">
         <main>
-        <div class="row">
-          <div class="col-6">
-          <h1>Ejercicio 1</h1>
-        <p>1.Hacer un programa en PHP que permita mostrar en pantalla la suma, resta, multiplicación y división de dos números enteros almacenados en 2 variables diferentes (utilice formularios HTML).</p>
-          </div>
-        </div>
-        
-
-
-
-
         
         </main>
-        </div>
-        <footer class="page-footer font-small teal pt-4">
-
-
-<div class="container-fluid text-center text-md-left">
-
-  
-  <div class="row">
-
-    
-    <div class="col-md-6 mt-md-0 mt-3">
-
-      
-      <h5 class="text-uppercase font-weight-bold">Carlos Andrés Díaz Aguirre</h5>
-      
-
-    </div>
-    
-
-    <hr class="clearfix w-100 d-md-none pb-3">
-
-    
-    <div class="col-md-6 mb-md-0 mb-3">
-
-      
-      <h5 class="text-uppercase font-weight-bold">Esteban Barrientos Aguirre</h5>
-      
-
-    </div>
-    
-
-  </div>
-
-</div>
-
-<div class="footer-copyright text-center py-3">© 2020 Copyright:
-  <a href="https://www.cesde.edu.co/Paginas/tecnicos/procesos-tecnologicos-e-industriales/desarrollo-de-software-virtual.aspx"> Grupo Cerrado Intersoftware - CESDE</a>
-</div>
-
-
-</footer>
+        <footer class="bg-dark text-white mt-5">
+          <div class="contaner">
+            <div class="row justify-content-around text-center ">
+              <div class="col-md-3 mt-5">
+                <img src="recursos/creador1.jpeg" alt="creador Carlos Diaz" class="img-fluid w-100 rounded-circle">
+                <p>Carlos Andres Diaz Aguirre ©</p>
+                <p>andrez1915@gmail.com</p>
+                <p>Medellin - Colombia</p>
+                <p>2020</p>
+              </div>
+              <div class="col-md-3 mt-5">
+              <img src="recursos/creador1.jpeg" alt="creador Carlos Diaz" class="img-fluid w-100 rounded-circle">
+                <p>Esteban Barrientos ©</p>
+                <p>EstebanBarrientos@gmail.com</p>
+                <p>Medellin - Colombia</p>
+                <p>2020</p>
+              </div>
+            </div>
+            <div class="row justify-content-center text-center">
+              <div class="col-md-8">
+                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                  <a href="https://www.cesde.edu.co/Paginas/tecnicos/procesos-tecnologicos-e-industriales/desarrollo-de-software-virtual.aspx"> Grupo Cerrado Intersoftware - CESDE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
