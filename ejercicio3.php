@@ -120,7 +120,7 @@
                                             echo("<div class=\"card text-center col-md-12\">"
                                                     ."<p><img class=\"card-img-top w-100 img-fluid col-md-5\" src=\"recursos/zapatos.jpg\" alt=\"Zapatos\"></p>"
                                                     ."<div class=\"card-body\">"
-                                                        ."<h4 class=\"text-success card-text\">Total Calculado!</h4>"
+                                                        ."<div class=\"alert alert-success\" role=\"alert\">Resultado Obtenido!</div>"
                                                         ."<p class=\"text-info card-text\">El Valor Total A pagar es $".$valorTotal."</p>"
                                                         ."<p class=\"text-info card-text\">La cantidad de pares de zapatos fue de ".$zapatos."</p>"
                                                         ."<p class=\"text-info card-text\">Cada par tiene un precio de $".$valor."</p>"
@@ -135,8 +135,13 @@
                                         
                                         ?>
                                         <?php else: ?>
-                                            <p class="text-danger">Debe ingresar una cantidad pares de zapatos</p>
-                                            <p class="text-danger">Debe ingresar el valor de los pares de zapatos</p>
+                                            <div class="alert alert-danger" role="alert">
+                                                Debe ingresar la cantidad de pares de zapatos!
+                                            </div>
+                                            <div class="alert alert-danger" role="alert">
+                                                Debe ingresar el valor de los pares de zapatos!
+                                            </div>
+                                            
                                         <?php endif ?>
                                     <?php endif ?>
                                 </div>
