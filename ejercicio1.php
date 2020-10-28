@@ -81,6 +81,7 @@
               <div class="col-md-8">
                   <div class="card text-center">
                       <div class="card-body">
+                        <h4 class="text-info">CALCULADORA</h4>
                         <img class="card-img-top w-100 img-fluid col-md-6" src="recursos/calculadora.jpg" alt="calculadora">
                         <form action="ejercicio1.php" method="POST">
                           <div class="row justify-content-center">
