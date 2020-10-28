@@ -97,6 +97,7 @@
                         <div class="col-md-4">
                           <div class="card">
                             <div class="card-body">
+                            <h5 class="text-info card-title">Usuario 1</h5>
                               <img class="card-img-top w-100 img-fluid" src="recursos/stand.png" alt="stand">
                               <input type="text" class="form-control mt-3" placeholder="Nombre Completo" name="nombreStand">
                               <input type="text" class="form-control mt-2" placeholder="Direccion" name="direccionStand">
@@ -109,6 +110,7 @@
                         <div class="col-md-4">
                           <div class="card">
                             <div class="card-body">
+                            <h5 class="text-info card-title">Usuario 2</h5>
                               <img class="card-img-top w-100 img-fluid" src="recursos/butter.png" alt="butters">
                               <input type="text" class="form-control mt-3" placeholder="Nombre Completo" name="nombreButter">
                               <input type="text" class="form-control mt-2" placeholder="Direccion" name="direccionButter">
@@ -120,6 +122,7 @@
                         <div class="col-md-4">
                           <div class="card">
                             <div class="card-body">
+                            <h5 class="text-info card-title">Usuario 3</h5>
                               <img class="card-img-top w-100 img-fluid" src="recursos/erick.png" alt="erick">
                               <input type="text" class="form-control mt-3" placeholder="Nombre Completo" name="nombreErick">
                               <input type="text" class="form-control mt-2" placeholder="Direccion" name="direccionErick">
@@ -133,6 +136,7 @@
                         <div class="col-md-4">
                           <div class="card">
                             <div class="card-body">
+                            <h5 class="text-info card-title">Usuario 4</h5>
                               <img class="card-img-top w-100 img-fluid" src="recursos/kyel.png" alt="kyel">
                               <input type="text" class="form-control mt-3" placeholder="Nombre Completo" name="nombreKyel">
                               <input type="text" class="form-control mt-2" placeholder="Direccion" name="direccionKyel">
