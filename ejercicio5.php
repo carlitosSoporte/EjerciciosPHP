@@ -19,10 +19,10 @@
             
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                         <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown active">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Ejercicios 1-5
                             </a>
@@ -35,7 +35,7 @@
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="ejercicio4.php">Ejercicio 4</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio5.php">Ejercicio 5</a>
+                                <a class="dropdown-item active" href="ejercicio5.php">Ejercicio 5</a>
                             </div>
                         </li>
                         </li>
@@ -70,7 +70,7 @@
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
-                        <h5 class="text-info">Ejercicio 5</h5>
+                        <h4 class="text-info">Ejercicio 5</h4>
                         <p class="card-text">5.Bancolombia contrata sus servicios de desarrollador para realizar un programa en PHP que permita:</p>
                         <ul>
                           <li>Almacenar en variables información de nombre, teléfono, dirección y salario de 5 usuarios de una sucursal llamada sucursal A.</li>
@@ -87,11 +87,78 @@
             <div class="row mt-5">
               <div class="col-md-12">
                 <h4 class="text-success">SOLUCION PROPUESTA</h4>
+                <h2 class="card-title text-info text-center">Sucursal A</h2>
                 <div class="card">
                   <div class="card-body text-center">
+                    
                     <img class="card-img-top w-100 img-fluid col-md-6" src="recursos/bancolombia.jpg" alt="Bancolombia">
+                    <form action="ejercicio5.php" method="POST">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <img class="card-img-top w-100 img-fluid" src="recursos/stand.png" alt="stand">
+                              <input type="text" class="form-control mt-3" placeholder="Nombre Completo" name="nombreStand">
+                              <input type="text" class="form-control mt-2" placeholder="Direccion" name="direccionStand">
+                              <input type="text" class="form-control mt-2" placeholder="Telefono" name="telefonoStand">
+                              <input type="number" class="form-control mt-2" placeholder="Salario" name="salarioStand">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <img class="card-img-top w-100 img-fluid" src="recursos/butter.png" alt="butters">
+                              <input type="text" class="form-control mt-3" placeholder="Nombre Completo" name="nombreButter">
+                              <input type="text" class="form-control mt-2" placeholder="Direccion" name="direccionButter">
+                              <input type="text" class="form-control mt-2" placeholder="Telefono" name="telefonoButter">
+                              <input type="number" class="form-control mt-2" placeholder="Salario" name="salarioButter">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <img class="card-img-top w-100 img-fluid" src="recursos/erick.png" alt="erick">
+                              <input type="text" class="form-control mt-3" placeholder="Nombre Completo" name="nombreErick">
+                              <input type="text" class="form-control mt-2" placeholder="Direccion" name="direccionErick">
+                              <input type="text" class="form-control mt-2" placeholder="Telefono" name="telefonoErick">
+                              <input type="number" class="form-control mt-2" placeholder="Salario" name="salarioErick">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row justify-content-around mt-4">
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <img class="card-img-top w-100 img-fluid" src="recursos/kyel.png" alt="kyel">
+                              <input type="text" class="form-control mt-3" placeholder="Nombre Completo" name="nombreKyel">
+                              <input type="text" class="form-control mt-2" placeholder="Direccion" name="direccionKyel">
+                              <input type="text" class="form-control mt-2" placeholder="Telefono" name="telefonoKyel">
+                              <input type="number" class="form-control mt-2" placeholder="Salario" name="salarioKyel">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="text-info card-title">Usuario 5</h5>
+                              <img class="card-img-top w-100 img-fluid" src="recursos/kenny.png" alt="kenny">
+                              <input type="text" class="form-control mt-3" placeholder="Nombre Completo" name="nombreKenny">
+                              <input type="text" class="form-control mt-2" placeholder="Direccion" name="direccionKenny">
+                              <input type="text" class="form-control mt-2" placeholder="Telefono" name="telefonoKenny">
+                              <input type="number" class="form-control mt-2" placeholder="Salario" name="salarioKenny">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary col-md-10 mt-4" name="btnEnviarDatos">Enviar datos</button>
+                      
+                    </form>
                   </div>
-                  </div>
+                </div>
               </div>
             </div>
           </div>
