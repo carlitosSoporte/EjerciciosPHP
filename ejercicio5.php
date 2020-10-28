@@ -60,6 +60,27 @@
             </nav>
         </header>
         <main>
+          <div class="container">
+            <div class="row justify-content-center mt-5">
+              <div class="col-md-4">
+                <div class="card text-center">
+                  <img class="card-img-top" src="recursos/pensando.jpg" alt="Pensando">
+                  <div class="card-body">
+                    <h5 class="text-info">Ejercicio 5</h5>
+                    <p class="card-text">5.Bancolombia contrata sus servicios de desarrollador para realizar un programa en PHP que permita:</p>
+                    <ul>
+                      <li>Almacenar en variables información de nombre, teléfono, dirección y salario de 5 usuarios de una sucursal llamada sucursal A.</li>
+                      <li>Sumar todos los salarios de los usuarios de la sucursal A en una sola variable llamada $sumatoriaSalarios y así poder comparar dicho valor con las sucursales B cuyo valor de salarios mensuales es de 40.000.000 y la sucursal C cuyo valor de salarios mensuales es de 32.000.000. </li>
+                    </ul>
+                    <p class="card-text">Permita que su código muestre cual sucursal tiene la mejor sumatoria de salarios y además muestre en pantalla la información completa de los 5 usuarios de la sucursal A</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+
+              </div>
+            </div>
+          </div>
         
         </main>
         <footer class="bg-dark text-white mt-5">
