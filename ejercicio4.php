@@ -60,7 +60,79 @@
             </nav>
         </header>
         <main>
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top w-100 img-fluid" src="recursos/pensando.jpg" alt="pensando">
+                  <div class="card-body">
+                    <h5 class="card-text text-info text-center">Ejercicio 4</h5>
+                    <p class="card-text">4.Hacer un programa en PHP para ayudar a un trabajador de Postobón a saber cuál será su sueldo semanal, se sabe que, si trabaja 40 horas o enos, se le pagará $20000 por hora, pero si trabaja más de 40 horas entonces las horas extras se le pagarán a $25000 por hora.</p>
+                  </div>
+                </div>     
+              </div>
+              <div class="col-md-8">
+                  <div class="card text-center">
+                      <div class="card-body">
+                        <h4 class="text-info">Salario a recibir</h4>
+                        <img class="card-img-top w-100 img-fluid col-md-6" src="recursos/salario.jpeg" alt="salario">
+                        <form action="ejercicio4.php" method="POST">
+                          <div class="row justify-content-center">
+                            <div class="col-md-8 mt-4">
+                              <input type="number" class="form-control" placeholder="Ingresa las horas trabajadas" name="cantidadHoras">
+                            </div>
+                            
+                            
+                          </div>
+                          <div class="row justify-content-center mt-2">
+                            <div class="col-md-10">
+                              <div class="form-group">
+                                <button type="submit" class="btn btn-primary w-100" name="btnCalcular">Calcular Salario</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row justify-content-center">
+                            <div class="col-md-8">
+                              <?php 
+                                calcularSalario();
+
+                                function calcularSalario(){
+                                  if(isset($_POST["btnCalcular"])){
+                                    $horas = $_POST["cantidadHoras"];
+                                    
+                                    $operacion = $_POST["operacion"];
+                                    if(!empty($horas){
+  
+                                      
+  
+                                      echo "<div class=\"card text-center col-md-12\">"
+                                              ."<div class=\"card-body mt-3\">"
+                                                ."<div class=\"alert-success\" role=\"alert\">Resultado Obtenido!"
+                                                ."<p class=\"text-info\">El salario a cobrar es ". = ".$resultado."</p>"
+                                              ."</div>"
+                                            ."</div>";
+  
+                                    }
+                                    else{
+                                      echo "<div class=\"alert alert-danger\" role=\"alert\">"
+                                              ."Debes ingresar la cantidad de horas trabajadas"
+                                            ."</div>";
+                                    }
+                                  }
+                                }
+                              ?>
+                            </div>
+                          </div>
+                          
+                        </form>  
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+          </div>
         
+
         </main>
         <footer class="bg-dark text-white mt-5">
           <div class="contaner">
