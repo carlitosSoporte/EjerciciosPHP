@@ -63,7 +63,7 @@
           <div class="container">
             <div class="row justify-content-center mt-5">
               <div class="col-md-12">
-                <div class="card text-center">
+                <div class="card">
                   <div class="row">
                     <div class="col-md-4">
                       <img class="card-img-top w-100 img-fluid" src="recursos/pensando.jpg" alt="Pensando">
@@ -85,13 +85,13 @@
               </div>
             </div>
             <div class="row mt-5">
-            <div class="col-md-12">
-              <h4 class="text-success">SOLUCION PROPUESTA</h4>
+              <div class="col-md-12">
+                <h4 class="text-success">SOLUCION PROPUESTA</h4>
                 <div class="card">
-                  <img class="card-img-top" src="recursos/bancolombia.jpg" alt="Bancolombia">
-                  <div class="card-body">
+                  <div class="card-body text-center">
+                    <img class="card-img-top w-100 img-fluid col-md-6" src="recursos/bancolombia.jpg" alt="Bancolombia">
                   </div>
-                </div>
+                  </div>
               </div>
             </div>
           </div>

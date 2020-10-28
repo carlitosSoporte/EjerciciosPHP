@@ -67,7 +67,7 @@
                             
                             <div class="card-body">
                                 <img src="recursos/pensando.jpg" class="card-img-top w-100 img-fluid" alt="pensando">
-                                <h5 class="card-title text-center mt-3">Ejercicio 3</h5>
+                                <h5 class="card-title text-center mt-3 text-info">Ejercicio 3</h5>
                                 <p class="card-text">3.Codificar un programa en PHP para la tienda Spring Step que tiene una promoción de descuento, esta dependerá del número de zapatos que se compren.</p>
                                 </p>
                                 <ul class="card-text">

@@ -62,11 +62,11 @@
         <main>
           <div class="container">
             <div class="row mt-5 justify-content-center">
-              <div class="col-md-4 text-center">
+              <div class="col-md-4">
                 <div class="card">
                   <img class="card-img-top w-100 img-fluid" src="recursos/pensando.jpg" alt="pensando">
                   <div class="card-body">
-                    <h5 class="card-text">Ejercicio 1</h5>
+                    <h5 class="card-text text-info text-center">Ejercicio 1</h5>
                     <p class="card-text">1.Hacer un programa en PHP que permita mostrar en pantalla la:</p>
                     <ul>
                       <li>Suma</li>
