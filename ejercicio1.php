@@ -27,7 +27,7 @@
                             Ejercicios 1-5
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="ejercicio1.php">Ejercicio 1</a>
+                                <a class="dropdown-item active" href="ejercicio1.php">Ejercicio 1</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="ejercicio2.php">Ejercicio 2</a>
                                 <div class="dropdown-divider"></div>
@@ -60,6 +60,119 @@
             </nav>
         </header>
         <main>
+          <div class="container">
+            <div class="row mt-5 justify-content-center">
+              <div class="col-md-4 text-center">
+                <div class="card">
+                  <img class="card-img-top w-100 img-fluid" src="recursos/pensando.jpg" alt="pensando">
+                  <div class="card-body">
+                    <h5 class="card-text">Ejercicio 1</h5>
+                    <p class="card-text">1.Hacer un programa en PHP que permita mostrar en pantalla la:</p>
+                    <ul>
+                      <li>Suma</li>
+                      <li>Resta</li>
+                      <li>Multiplicación</li>
+                      <li>División</li>
+                    </ul>
+                    <p class="card'text">de dos números enteros almacenados en 2 variables diferentes (utilice formularios HTML).</p>
+                  </div>
+                </div>     
+              </div>
+              <div class="col-md-8">
+                  <div class="card text-center">
+                      <div class="card-body">
+                        <img class="card-img-top w-100 img-fluid col-md-6" src="recursos/calculadora.jpg" alt="calculadora">
+                        <form action="ejercicio1.php" method="POST">
+                          <div class="row justify-content-center">
+                            <div class="col-md-4 mt-3">
+                              <input type="number" class="form-control" placeholder="numero 1" name="numero1">
+                            </div>
+                            <div class="col-md-4 mt-3">
+                              <div class="form-group">
+                                <select class="form-control" id="operacion" name="operacion">
+                                  <option>sumar</option>
+                                  <option>restar</option>
+                                  <option>multiplicar</option>
+                                  <option>dividir</option>          
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                              <div class="form-group">
+                                <input type="number" class="form-control" placeholder="numero 2" name="numero2">
+                              </div>
+                              
+                            </div>
+                          </div>
+                          <div class="row justify-content-center mt-2">
+                            <div class="col-md-10">
+                              <div class="form-group">
+                                <button type="submit" class="btn btn-primary w-100" name="btnCalcular">Calcular</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row justify-content-center">
+                            <div class="col-md-8">
+                              <?php 
+                                calcularOperacion();
+
+                                function calcularOperacion(){
+                                  if(isset($_POST["btnCalcular"])){
+                                    $numero1 = $_POST["numero1"];
+                                    $numero2 = $_POST["numero2"];
+                                    $operacion = $_POST["operacion"];
+                                    if(!empty($numero1) && !empty($numero2)){
+  
+                                      switch ($operacion) {
+                                        case 'sumar':
+                                            $resultado = $numero1 + $numero2;
+                                            $signo = "+";
+                                          break;
+                                        
+                                          case 'restar':
+                                            $resultado = $numero1 - $numero2;
+                                            $signo = "-";
+                                          break;
+                                        
+                                          case 'multiplicar':
+                                            $resultado = $numero1 * $numero2;
+                                            $signo = "*";
+                                          break;
+                                        
+                                          case 'dividir':
+                                            $resultado = $numero1 / $numero2;
+                                            $signo = "/";
+                                          break;
+                                  
+                                      }
+  
+                                      echo "<div class=\"card text-center col-md-12\">"
+                                              ."<div class=\"card-body mt-3\">"
+                                                ."<div class=\"alert-success\" role=\"alert\">Resultado Obtenido!"
+                                                ."<p class=\"text-info\">El resultado de ".$numero1." ".$signo." ".$numero2." = ".$resultado."</p>"
+                                              ."</div>"
+                                            ."</div>";
+  
+                                    }
+                                    else{
+                                      echo "<div class=\"alert alert-danger\" role=\"alert\">"
+                                              ."Debe ingresar el numero 1 y el numero 2 !"
+                                            ."</div>";
+                                    }
+                                  }
+                                }
+                              ?>
+                            </div>
+                          </div>
+                          
+                        </form>  
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+          
         
         </main>
         <footer class="bg-dark text-white mt-5">
