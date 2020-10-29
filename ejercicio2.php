@@ -61,15 +61,14 @@
     <div class="container">
         <main>
             <div class="row">
-                <div class="col-10 mt-4">
+                <div class="col-8 mt-4">
                     <h1 class="p-3 mb-2 bg-white text-dark">Ejercicio 2</h1>
                     <p>2.El gimnasio Bodytech, lo contrata para desarrollar una aplicación web que permita a sus
                         usuarios calcular el índice de masa corporal basado en el formula: </p>
-                        <img src="recursos/imc.jpg" class="card-img-top w-100 img-fluid" alt="pensando">
-
-
-
-
+                  
+                </div>
+                <div class="col-4">
+                <img src="recursos/imc.jpg" class="card-img-top  img-fluid" alt="Indice Masa Corporal">
                 </div>
             </div>
             <form action="ejercicio2.php" method="POST">
