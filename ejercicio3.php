@@ -90,10 +90,10 @@
                                         
                                         <div class="row justify-content-center">
                                             <div class="col-md-6 mt-2">
-                                                <input type="number" class="form-control" placeholder="Ingresa cantidad de pares" name="zapatos" id="zapatos">
+                                                <input type="number" class="form-control" placeholder="Ingresa cantidad de pares" name="zapatos" id="zapatos" required>
                                             </div>
                                             <div class="col-md-4 mt-2">
-                                                <input type="number" class="form-control" placeholder="Valor por par" name="valor" id="valor">
+                                                <input type="number" class="form-control" placeholder="Valor por par" name="valor" id="valor" required>
                                             </div>
                                         </div>
                                         <button type="submit" class="btn btn-primary mt-3 mb-4" name="calcular" id="calcular">Calcular Total</button>
@@ -130,22 +130,13 @@
                                                     ."</div>"
                                                  ."</div>");
                                         }
-                                    ?>
-                                    <?php if(isset($_POST["calcular"])): ?>
-                                        <?php if(!empty($_POST["zapatos"]) && !empty($_POST["valor"])): 
-                                            calcularTotal();
                                         
-                                        ?>
-                                        <?php else: ?>
-                                            <div class="alert alert-danger" role="alert">
-                                                Debe ingresar la cantidad de pares de zapatos!
-                                            </div>
-                                            <div class="alert alert-danger" role="alert">
-                                                Debe ingresar el valor de los pares de zapatos!
-                                            </div>
-                                            
-                                        <?php endif ?>
-                                    <?php endif ?>
+                                        if(isset($_POST["calcular"])){
+                                            calcularTotal();
+                                        }
+                                        
+                                    ?>
+                                   
                                 </div>
                             
                             </div>

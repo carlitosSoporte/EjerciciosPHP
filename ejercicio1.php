@@ -86,7 +86,7 @@
                         <form action="ejercicio1.php" method="POST">
                           <div class="row justify-content-center">
                             <div class="col-md-4 mt-3">
-                              <input type="number" class="form-control" placeholder="numero 1" name="numero1">
+                              <input type="number" class="form-control" placeholder="numero 1" name="numero1" required>
                             </div>
                             <div class="col-md-4 mt-3">
                               <div class="form-group">
@@ -100,7 +100,7 @@
                             </div>
                             <div class="col-md-4 mt-3">
                               <div class="form-group">
-                                <input type="number" class="form-control" placeholder="numero 2" name="numero2">
+                                <input type="number" class="form-control" placeholder="numero 2" name="numero2" required>
                               </div>
                               
                             </div>
@@ -122,44 +122,36 @@
                                     $numero1 = $_POST["numero1"];
                                     $numero2 = $_POST["numero2"];
                                     $operacion = $_POST["operacion"];
-                                    if(!empty($numero1) && !empty($numero2)){
-  
-                                      switch ($operacion) {
-                                        case 'sumar':
-                                            $resultado = $numero1 + $numero2;
-                                            $signo = "+";
-                                          break;
-                                        
-                                          case 'restar':
-                                            $resultado = $numero1 - $numero2;
-                                            $signo = "-";
-                                          break;
-                                        
-                                          case 'multiplicar':
-                                            $resultado = $numero1 * $numero2;
-                                            $signo = "*";
-                                          break;
-                                        
-                                          case 'dividir':
-                                            $resultado = $numero1 / $numero2;
-                                            $signo = "/";
-                                          break;
-                                  
-                                      }
-  
-                                      echo "<div class=\"card text-center col-md-12\">"
-                                              ."<div class=\"card-body mt-3\">"
-                                                ."<div class=\"alert-success\" role=\"alert\">Resultado Obtenido!"
-                                                ."<p class=\"text-info\">El resultado de ".$numero1." ".$signo." ".$numero2." = ".$resultado."</p>"
-                                              ."</div>"
-                                            ."</div>";
-  
+                                    switch ($operacion) {
+                                      case 'sumar':
+                                          $resultado = $numero1 + $numero2;
+                                          $signo = "+";
+                                        break;
+                                      
+                                        case 'restar':
+                                          $resultado = $numero1 - $numero2;
+                                          $signo = "-";
+                                        break;
+                                      
+                                        case 'multiplicar':
+                                          $resultado = $numero1 * $numero2;
+                                          $signo = "*";
+                                        break;
+                                      
+                                        case 'dividir':
+                                          $resultado = $numero1 / $numero2;
+                                          $signo = "/";
+                                        break;
+                                
                                     }
-                                    else{
-                                      echo "<div class=\"alert alert-danger\" role=\"alert\">"
-                                              ."Debe ingresar el numero 1 y el numero 2 !"
-                                            ."</div>";
-                                    }
+
+                                    echo "<div class=\"card text-center col-md-12\">"
+                                            ."<div class=\"card-body mt-3\">"
+                                              ."<div class=\"alert-success\" role=\"alert\">Resultado Obtenido!"
+                                              ."<p class=\"text-info\">El resultado de ".$numero1." ".$signo." ".$numero2." = ".$resultado."</p>"
+                                            ."</div>"
+                                          ."</div>";
+                                    
                                   }
                                 }
                               ?>
