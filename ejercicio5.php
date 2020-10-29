@@ -172,33 +172,35 @@
           </div>
         </main>
         <footer class="bg-dark text-white mt-5">
-          <div class="contaner">
+        <div class="contaner">
             <div class="row justify-content-around text-center ">
-              <div class="col-md-3 mt-5">
-                <img src="recursos/creador1.jpeg" alt="creador Carlos Diaz" class="img-fluid w-100 rounded-circle">
-                <p>Carlos Andres Diaz Aguirre ©</p>
-                <p>andrez1915@gmail.com</p>
-                <p>Medellin - Colombia</p>
-                <p>2020</p>
-              </div>
-              <div class="col-md-3 mt-5">
-              <img src="recursos/creador1.jpeg" alt="creador Carlos Diaz" class="img-fluid w-100 rounded-circle">
-                <p>Esteban Barrientos ©</p>
-                <p>EstebanBarrientos@gmail.com</p>
-                <p>Medellin - Colombia</p>
-                <p>2020</p>
-              </div>
+                <div class="col-md-3 mt-5">
+                    <img src="recursos/creador1.jpeg" alt="creador Carlos Diaz" class="img-fluid w-100 rounded-circle">
+                    <p>Carlos Andres Diaz Aguirre ©</p>
+                    <p>andrez1915@gmail.com</p>
+                    <p>Medellin - Colombia</p>
+                    <p>2020</p>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <img src="recursos/esteban2.png" alt="creador Esteban Barrientos" class="img-fluid w-100 rounded-circle">
+                    <p>Esteban Barrientos ©</p>
+                    <p>EstebanBarrientos@gmail.com</p>
+                    <p>Medellin - Colombia</p>
+                    <p>2020</p>
+                </div>
             </div>
             <div class="row justify-content-center text-center">
-              <div class="col-md-8">
-                <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                  <a href="https://www.cesde.edu.co/Paginas/tecnicos/procesos-tecnologicos-e-industriales/desarrollo-de-software-virtual.aspx"> Grupo Cerrado Intersoftware - CESDE</a>
+                <div class="col-md-8">
+                    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                        <a
+                            href="https://www.cesde.edu.co/Paginas/tecnicos/procesos-tecnologicos-e-industriales/desarrollo-de-software-virtual.aspx">
+                            Grupo Cerrado Intersoftware - CESDE</a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        
-        </footer>
+        </div>
+
+    </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
