@@ -64,10 +64,10 @@
             <div class="row mt-5 justify-content-center">
               <div class="col-md-4">
                 <div class="card">
-                  <img class="card-img-top w-100 img-fluid" src="recursos/pensando.jpg" alt="pensando">
+                  <img class="card-img-top w-100 img-fluid" src="recursos/dudas2.jpg" alt="pensando">
                   <div class="card-body">
                     <h5 class="card-text text-info text-center">Ejercicio 4</h5>
-                    <p class="card-text">4.Hacer un programa en PHP para ayudar a un trabajador de Postobón a saber cuál será su sueldo semanal, se sabe que, si trabaja 40 horas o enos, se le pagará $20000 por hora, pero si trabaja más de 40 horas entonces las horas extras se le pagarán a $25000 por hora.</p>
+                    <p class="card-text">4.Hacer un programa en PHP para ayudar a un trabajador de Postobón a saber cuál será su sueldo semanal, se sabe que, si trabaja 40 horas o menos, se le pagará $20000 por hora, pero si trabaja más de 40 horas entonces las horas extras se le pagarán a $25000 por hora.</p>
                   </div>
                 </div>     
               </div>
@@ -100,17 +100,33 @@
                                   if(isset($_POST["btnCalcular"])){
                                     $horas = $_POST["cantidadHoras"];
                                     
-                                    $operacion = $_POST["operacion"];
-                                    if(!empty($horas){
+                                    
+                                    if(!empty($horas)){
+                                      if($horas <=40){
+                                        $resultado = $horas *20000;
+                                        echo ("<div class=\"card text-center col-md-12\">"
+                                        ."<div class=\"card-body mt-3\">"
+                                          ."<div class=\"alert-success\" role=\"alert\">Resultado Obtenido!"
+                                          ."<p class=\"text-info\"> el valor total a recibir es de: $ ".$resultado."</p>"
+                                        ."</div>"
+                                      ."</div>");
+                                      }
+                                      elseif($horas > 40){
+                                        $resultado = ($horas -40)*25000+(40*20000);
+                                        $extras = $horas - 40;
+
+                                        echo("<div class=\"card text-center col-md-12\">"
+                                              ."<div class=\"card-body mt-3\">"
+                                                ."<div class=\"alert-success\" role=\"alert\">Resultado Obtenido!"
+                                                ."<p class=\"text-info\">Las horas extras trabajadas son  ".$extras." y el valor total a recibir es de: $ ".$resultado."</p>"
+                                              ."</div>"
+                                            ."</div>");
+                                      }
+
   
                                       
   
-                                      echo "<div class=\"card text-center col-md-12\">"
-                                              ."<div class=\"card-body mt-3\">"
-                                                ."<div class=\"alert-success\" role=\"alert\">Resultado Obtenido!"
-                                                ."<p class=\"text-info\">El salario a cobrar es ". = ".$resultado."</p>"
-                                              ."</div>"
-                                            ."</div>";
+                                      
   
                                     }
                                     else{
@@ -135,31 +151,35 @@
 
         </main>
         <footer class="bg-dark text-white mt-5">
-          <div class="contaner">
+        <div class="contaner">
             <div class="row justify-content-around text-center ">
-              <div class="col-md-3 mt-5">
-                <img src="recursos/creador1.jpeg" alt="creador Carlos Diaz" class="img-fluid w-100 rounded-circle">
-                <p>Carlos Andres Diaz Aguirre ©</p>
-                <p>andrez1915@gmail.com</p>
-                <p>Medellin - Colombia</p>
-                <p>2020</p>
-              </div>
-              <div class="col-md-3 mt-5">
-              <img src="recursos/creador1.jpeg" alt="creador Carlos Diaz" class="img-fluid w-100 rounded-circle">
-                <p>Esteban Barrientos ©</p>
-                <p>EstebanBarrientos@gmail.com</p>
-                <p>Medellin - Colombia</p>
-                <p>2020</p>
-              </div>
+                <div class="col-md-3 mt-5">
+                    <img src="recursos/creador1.jpeg" alt="creador Carlos Diaz" class="img-fluid w-100 rounded-circle">
+                    <p>Carlos Andres Diaz Aguirre ©</p>
+                    <p>andrez1915@gmail.com</p>
+                    <p>Medellin - Colombia</p>
+                    <p>2020</p>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <img src="recursos/esteban2.png" alt="creador Esteban Barrientos" class="img-fluid w-100 rounded-circle">
+                    <p>Esteban Barrientos ©</p>
+                    <p>EstebanBarrientos@gmail.com</p>
+                    <p>Medellin - Colombia</p>
+                    <p>2020</p>
+                </div>
             </div>
             <div class="row justify-content-center text-center">
-              <div class="col-md-8">
-                <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                  <a href="https://www.cesde.edu.co/Paginas/tecnicos/procesos-tecnologicos-e-industriales/desarrollo-de-software-virtual.aspx"> Grupo Cerrado Intersoftware - CESDE</a>
+                <div class="col-md-8">
+                    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                        <a
+                            href="https://www.cesde.edu.co/Paginas/tecnicos/procesos-tecnologicos-e-industriales/desarrollo-de-software-virtual.aspx">
+                            Grupo Cerrado Intersoftware - CESDE</a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
+
+    </footer>
         
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
