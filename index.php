@@ -6,117 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
     <title> EJERCICIOS PHP</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.php">
-                <img src="recursos/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo"
-                    loading="lazy">
-            </a>
-            <a class="navbar-brand" href="index.php" id="textoPrincipal">Ejercicios PHP</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.php">
+                    <img src="recursos/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo" loading="lazy">
+                </a>
+                <a class="navbar-brand" href="index.php" id="textoPrincipal">Ejercicios PHP</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item active">
+                        <a class="nav-link active" href="index.php">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Ejercicios 1-5
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="ejercicio1.php">Ejercicio 1</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="ejercicio2.php">Ejercicio 2</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="ejercicio3.php">Ejercicio 3</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="ejercicio4.php">Ejercicio 4</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="ejercicio5.php">Ejercicio 5</a>
-                        </div>
-                    </li>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="ejercicio1.php">Ejercicio 1</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio2.php">Ejercicio 2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio3.php">Ejercicio 3</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item " href="ejercicio4.php">Ejercicio 4</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio5.php">Ejercicio 5</a>
+                            </div>
+                        </li>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Ejercicios 6-10
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="ejercicio1.php">Ejercicio 6</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="ejercicio2.php">Ejercicio 7</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="ejercicio3.php">Ejercicio 8</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="ejercicio4.php">Ejercicio 9</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="ejercicio5.php">Ejercicio 10</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="ejercicio1.php">Ejercicio 6</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio2.php">Ejercicio 7</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio3.php">Ejercicio 8</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio4.php">Ejercicio 9</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="ejercicio5.php">Ejercicio 10</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
     </header>
     <main>
-        <div class="container">
-        <h1 class="p-3 mb-4 mt-4">Taller Primer momento Evaluativo Web 1</h1>
-            <div class="card-group">
-                <div class="card">
-                    
-                    <a href="ejercicio1.php"><img src="recursos/calculadora.jpg" class="card-img-top" alt="calculadora"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">1. Calculadora</h5>
-                        <p class="card-text">Intenta resolver las operaciones básicas con nuestra calculadora</p>
-                        
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="ejercicio2.php"><img src="recursos/imc.jpg" class="card-img-top" alt="IMC"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">2. Conoce tu IMC </h5>
-                        <p class="card-text">¿Quieres saber si estás pasado o pasada de peso?</p>
-                        
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="ejercicio3.php"><img src="recursos/zapatos.jpg" class="card-img-top" alt="zapato"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">3. Compra Zapatos</h5>
-                        <p class="card-text">Calcula cuanto descuento conseguirás en nuestra tienda de Zapatos</p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="card-group">
-                <div class="card">
-                    <a href="ejercicio4.php"><img src="recursos/salario.jpeg" class="card-img-top" alt="salario"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">4. Calcula Salario</h5>
-                        <p class="card-text">¿Trabajaste extra y no sabes cuanto vas a cobrar? ingresa aquí</p>
-                        
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <a href="ejercicio5.php"><img src="recursos/kenny.png" class="card-img-top" alt="kenny"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Compara sueldos</h5>
-                        <p class="card-text">Haz el cálculo de cual sucursal tiene los mejores salarios</p>
-                        
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <section class="container" id="galeria">
+    <div class="text-center pt-5" >
+        <h1>
+            Primer momento evaluativo
+        </h1>
+        <p>
+        Realizado por Carlos Andrés Diaz Aguirre y Esteban Barrientos Aguirre
+        </p>
+    </div>
+    <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm 12"><a href="ejercicio1.php"><img src="recursos/calculadora.jpg" alt="Calculadora"></a>
+    <h3>Calculadora</h3>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm 12"><a href="ejercicio2.php"><img src="recursos/imc.jpg" alt="Indide Masa Corporal"></a>
+    <h3>Indice Masa Muscular</h3>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm 12"><a href="ejercicio3.php"><img src="recursos/zapatos.jpg" alt="Zapatos"></a>
+    <h3>Compra Zapatos</h3>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm 12"><a href="ejercicio4.php"><img src="recursos/salario.jpeg" alt="Salario"></a>
+    <h3>Calcula Salario</h3>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm 12"><a href="ejercicio5.php"><img src="recursos/bancolombia.jpg" alt="Banco"></a>
+    <h3>Compara mayor salario</h3>
+    </div>
+    </div >
+    
+    
+    
+    </section>
+        
 
     </main>
     <footer class="bg-dark text-white mt-5">
