@@ -167,57 +167,7 @@
               </div>
             </div>
             <div class="row mt-3 justify-content-center">
-              <div class="col-md-12">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <?php if(isset($_POST["btnEnviarDatos"])): ?>
-                        <?php 
-                          $nombres = array($_POST["nombreStand"],$_POST["nombreButter"],$_POST["nombreErick"],$_POST["nombreKyel"],$_POST["nombreKenny"]);
-                          $direcciones = array($_POST["direccionStand"],$_POST["direccionButter"],$_POST["direccionErick"],$_POST["direccionKyel"],$_POST["direccionKenny"]);
-                          $telefonos = array($_POST["telefonoStand"],$_POST["telefonoButter"],$_POST["telefonoErick"],$_POST["telefonoKyel"],$_POST["telefonoKenny"]);
-                          $salarios = array($_POST["salarioStand"],$_POST["salarioButter"],$_POST["salarioErick"],$_POST["salarioKyel"],$_POST["salarioKenny"]);
-                          $sumatoriaSalarios =  0;
-                          $sumatoriaSucursalB = 40000000;
-                          $sumatoriaSucursalC = 32000000;
-
-                          for($i=0;$i<sizeof($salarios);$i++){
-                              $sumatoriaSalarios += $salarios[$i];
-                          }
-
-
-                          
-
-
-                        ?>
-                        <div class="col-md-6">
-                          <?php 
-                            for($i=0;$i<sizeof($salarios);$i++){
-
-                               echo "<div class=\"card\">"
-                                      ."<div class=\"card-body\">"
-                                      ."</div>"
-                                    ."</div>";
-
-                          }
-                          
-                          ?>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="card">
-                            <div class="card-body">
-                              
-                            </div>
-                          </div>
-                        </div>
-                        
-                      <?php endif ?>
-                      <?php ?>
-
-                    </div>
-                  </div>
-                </div>
-              </div>      
+                    
             </div>
           </div>
         </main>
