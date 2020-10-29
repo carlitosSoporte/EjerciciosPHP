@@ -74,19 +74,19 @@
         </p>
     </div>
     <div class="row">
-    <div class="col-lg-4 col-md-6 col-sm 12"><a href="ejercicio1.php"><img src="recursos/calculadora.jpg" alt="Calculadora"></a>
+    <div class="col-lg-4 col-md-6 col-sm-12"><a href="ejercicio1.php"><img src="recursos/calculadora.jpg" alt="Calculadora"></a>
     <h3>Calculadora</h3>
     </div>
-    <div class="col-lg-4 col-md-6 col-sm 12"><a href="ejercicio2.php"><img src="recursos/imc.jpg" alt="Indide Masa Corporal"></a>
+    <div class="col-lg-4 col-md-6 col-sm-12"><a href="ejercicio2.php"><img src="recursos/imc.jpg" alt="Indide Masa Corporal"></a>
     <h3>Indice Masa Muscular</h3>
     </div>
-    <div class="col-lg-4 col-md-6 col-sm 12"><a href="ejercicio3.php"><img src="recursos/zapatos.jpg" alt="Zapatos"></a>
+    <div class="col-lg-4 col-md-6 col-sm-12"><a href="ejercicio3.php"><img src="recursos/zapatos.jpg" alt="Zapatos"></a>
     <h3>Compra Zapatos</h3>
     </div>
-    <div class="col-lg-4 col-md-6 col-sm 12"><a href="ejercicio4.php"><img src="recursos/salario.jpeg" alt="Salario"></a>
+    <div class="col-lg-4 col-md-6 col-sm-12"><a href="ejercicio4.php"><img src="recursos/salario.jpeg" alt="Salario"></a>
     <h3>Calcula Salario</h3>
     </div>
-    <div class="col-lg-4 col-md-6 col-sm 12"><a href="ejercicio5.php"><img src="recursos/bancolombia.jpg" alt="Banco"></a>
+    <div class="col-lg-4 col-md-6 col-sm-12"><a href="ejercicio5.php"><img src="recursos/bancolombia.jpg" alt="Banco"></a>
     <h3>Compara mayor salario</h3>
     </div>
     </div >

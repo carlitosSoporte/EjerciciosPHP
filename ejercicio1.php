@@ -86,7 +86,7 @@
                         <form action="ejercicio1.php" method="POST">
                           <div class="row justify-content-center">
                             <div class="col-md-4 mt-3">
-                              <input type="number" class="form-control" placeholder="numero 1" name="numero1" required>
+                              <input type="number" step="0.01" class="form-control" placeholder="numero 1" name="numero1" required>
                             </div>
                             <div class="col-md-4 mt-3">
                               <div class="form-group">
@@ -100,7 +100,7 @@
                             </div>
                             <div class="col-md-4 mt-3">
                               <div class="form-group">
-                                <input type="number" class="form-control" placeholder="numero 2" name="numero2" required>
+                                <input type="number" step="0.01" class="form-control" placeholder="numero 2" name="numero2" required>
                               </div>
                               
                             </div>

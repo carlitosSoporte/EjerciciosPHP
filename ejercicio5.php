@@ -167,7 +167,170 @@
               </div>
             </div>
             <div class="row mt-3 justify-content-center">
-                    
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <?php if(isset($_POST["btnEnviarDatos"])): ?>
+                        <?php 
+                          $nombres = array($_POST["nombreStand"],$_POST["nombreButter"],$_POST["nombreErick"],$_POST["nombreKyel"],$_POST["nombreKenny"]);
+                          $direcciones = array($_POST["direccionStand"],$_POST["direccionButter"],$_POST["direccionErick"],$_POST["direccionKyel"],$_POST["direccionKenny"]);
+                          $telefonos = array($_POST["telefonoStand"],$_POST["telefonoButter"],$_POST["telefonoErick"],$_POST["telefonoKyel"],$_POST["telefonoKenny"]);
+                          $salarios = array($_POST["salarioStand"],$_POST["salarioButter"],$_POST["salarioErick"],$_POST["salarioKyel"],$_POST["salarioKenny"]);
+                          $sumatoriaSucursalB = 40000000;
+                          $sumatoriaSucursalC = 32000000;
+                          $sumatoriaSalarios =0;
+                          $rutaSucursalA = "recursos/southPark.jpg";
+                          $rutaSucursalB = "recursos/simpson.jpg";
+                          $rutaSucursalC = "recursos/happy.jpg";
+
+                          for($i=0;$i<sizeof($salarios);$i++){
+                              $sumatoriaSalarios += $salarios[$i];
+                          }
+
+
+                          
+
+
+                        ?>
+                        <div class="col-md-8">
+                          <?php 
+                            
+
+                          if($sumatoriaSalarios > $sumatoriaSucursalB & $sumatoriaSalarios > $sumatoriaSucursalC){
+
+                            $fotoPrimerLugar= $rutaSucursalA;
+                            $salarioPrimerLugar = $sumatoriaSalarios;
+                            $sucursalGanadora = "SCURSAL A";
+
+                            if($sumatoriaSucursalB > $sumatoriaSucursalC){
+                              $fotoSegundoLugar = $rutaSucursalB;
+                              $salarioSegundoLugar = $sumatoriaSucursalB;
+                              $sucursalSegundoLugar = "SUCURSAL B";
+                              $fotoTercerLugar = $rutaSucursalC;
+                              $salarioTercerLugar = $sumatoriaSucursalC;
+                              $sucursalTercerLugar = "SUCURSAL C";
+                            }
+                            else{
+                              $fotoSegundoLugar = $rutaSucursalC;
+                              $salarioSegundoLugar = $sumatoriaSucursalC;
+                              $fotoTercerLugar = $rutaSucursalB;
+                              $salarioTercerLugar = $sumatoriaSucursalB;
+                            }
+                          }
+                          else if($sumatoriaSucursalB > $sumatoriaSalarios & $sumatoriaSucursalB > $sumatoriaSucursalC){
+                            $fotoPrimerLugar= $rutaSucursalB;
+                            $salarioPrimerLugar = $sumatoriaSucursalB;
+                            $sucursalGanadora = "SUCURSAL B";
+
+                            if($sumatoriaSalarios > $sumatoriaSucursalC){
+                              $fotoSegundoLugar = $rutaSucursalA;
+                              $salarioSegundoLugar = $sumatoriaSalarios;
+                              $sucursalSegundoLugar = "SUCURSAL A";
+                              $fotoTercerLugar = $rutaSucursalC;
+                              $salarioTercerLugar = $sumatoriaSucursalC;
+                              $sucursalTercerLugar = "SUCURSAL C";
+                            }
+                            else{
+                              $fotoSegundoLugar = $rutaSucursalC;
+                              $salarioSegundoLugar = $sumatoriaSucursalC;
+                              $sucursalSegundoLugar = "SUCURSAL C";
+                              $fotoTercerLugar = $rutaSucursalA;
+                              $salarioTercerLugar = $sumatoriaSalarios;
+                              $sucursalTercerLugar = "SUCURSAL A";
+                            }
+                          }
+                          else{
+                            $fotoPrimerLugar= $rutaSucursalC;
+                            $salarioPrimerLugar = $sumatoriaSucursalC;
+                            $sucursalGanadora = "SCURSAL C";
+
+                            if($sumatoriaSucursalB > $sumatoriaSucursalC){
+                              $fotoSegundoLugar = $rutaSucursalB;
+                              $salarioSegundoLugar = $sumatoriaSucursalB;
+                              $sucursalSegundoLugar = "SUCURSAL B";
+                              $fotoTercerLugar = $rutaSucursalA;
+                              $salarioTercerLugar = $sumatoriaSalarios;
+                              $sucursalTercerLugar = "SUCURSAL A";
+                            }
+                            else{
+                              $fotoSegundoLugar = $rutaSucursalA;
+                              $salarioSegundoLugar = $sumatoriaSalarios;
+                              $sucursalSegundoLugar = "SUCURSAL A";
+                              $fotoTercerLugar = $rutaSucursalB;
+                              $salarioTercerLugar = $sumatoriaSucursalB;
+                              $sucursalTercerLugar = "SUCURSAL B";
+
+                            }
+                          }
+                          
+                          ?>
+                          <?php if(true): ?>
+                            <div class="card">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <img src=<?=$fotoPrimerLugar?> alt="Sucursal con mejor Salario" class="w-100 img-fluid">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="alert alert-success" role="alert">
+                                      <h5 class="text-succes"><?= $sucursalGanadora?> Ganadora!</h5>
+                                      <P class="tex-info">La sumatoria de salarios es de <?=$salarioPrimerLugar?></P>
+                                    </div>
+                                  </div>
+                                </div>
+                                <p></p>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <img src=<?=$fotoSegundoLugar?> alt="Sucursal con segundo mejor Salario" class="w-100 img-fluid">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="alert alert-info" role="alert">
+                                      <h5 class="text-succes"><?= $sucursalSegundoLugar?> Segundo Lugar!</h5>
+                                      <P class="tex-info">La sumatoria de salarios es de <?=$salarioSegundoLugar?></P>
+                                    </div>
+                                  </div>
+                                </div>
+                                <p></p>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <img src=<?=$fotoTercerLugar?> alt="Sucursal con peor Salario" class="w-100 img-fluid">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="alert alert-danger" role="alert">
+                                      <h5 class="text-succes"><?= $sucursalTercerLugar?> Tercer lugar!</h5>
+                                      <P class="tex-info">La sumatoria de salarios es de <?=$salarioTercerLugar?></P>
+                                    </div>
+                                  </div>
+                                </div>
+                                <p></p>
+                              </div>
+                            </div>
+                          <?php endif ?>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="card-body">
+                              
+                            </div>
+                          </div>
+                        </div>
+                        
+                      <?php endif ?>
+                      <?php ?>
+
+                    </div>
+                  </div>
+                </div>
+              </div>      
             </div>
           </div>
         </main>
