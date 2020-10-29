@@ -64,10 +64,10 @@
             <div class="row mt-5 justify-content-center">
               <div class="col-md-4">
                 <div class="card">
-                  <img class="card-img-top w-100 img-fluid" src="recursos/pensando.jpg" alt="pensando">
+                  <img class="card-img-top w-100 img-fluid" src="recursos/dudas2.jpg" alt="pensando">
                   <div class="card-body">
                     <h5 class="card-text text-info text-center">Ejercicio 4</h5>
-                    <p class="card-text">4.Hacer un programa en PHP para ayudar a un trabajador de Postobón a saber cuál será su sueldo semanal, se sabe que, si trabaja 40 horas o enos, se le pagará $20000 por hora, pero si trabaja más de 40 horas entonces las horas extras se le pagarán a $25000 por hora.</p>
+                    <p class="card-text">4.Hacer un programa en PHP para ayudar a un trabajador de Postobón a saber cuál será su sueldo semanal, se sabe que, si trabaja 40 horas o menos, se le pagará $20000 por hora, pero si trabaja más de 40 horas entonces las horas extras se le pagarán a $25000 por hora.</p>
                   </div>
                 </div>     
               </div>
@@ -100,17 +100,33 @@
                                   if(isset($_POST["btnCalcular"])){
                                     $horas = $_POST["cantidadHoras"];
                                     
-                                    $operacion = $_POST["operacion"];
-                                    if(!empty($horas){
+                                    
+                                    if(!empty($horas)){
+                                      if($horas <=40){
+                                        $resultado = $horas *20000;
+                                        echo ("<div class=\"card text-center col-md-12\">"
+                                        ."<div class=\"card-body mt-3\">"
+                                          ."<div class=\"alert-success\" role=\"alert\">Resultado Obtenido!"
+                                          ."<p class=\"text-info\"> el valor total a recibir es de: $ ".$resultado."</p>"
+                                        ."</div>"
+                                      ."</div>");
+                                      }
+                                      elseif($horas > 40){
+                                        $resultado = ($horas -40)*25000+(40*20000);
+                                        $extras = $horas - 40;
+
+                                        echo("<div class=\"card text-center col-md-12\">"
+                                              ."<div class=\"card-body mt-3\">"
+                                                ."<div class=\"alert-success\" role=\"alert\">Resultado Obtenido!"
+                                                ."<p class=\"text-info\">Las horas extras trabajadas son  ".$extras." y el valor total a recibir es de: $ ".$resultado."</p>"
+                                              ."</div>"
+                                            ."</div>");
+                                      }
+
   
                                       
   
-                                      echo "<div class=\"card text-center col-md-12\">"
-                                              ."<div class=\"card-body mt-3\">"
-                                                ."<div class=\"alert-success\" role=\"alert\">Resultado Obtenido!"
-                                                ."<p class=\"text-info\">El salario a cobrar es ". = ".$resultado."</p>"
-                                              ."</div>"
-                                            ."</div>";
+                                      
   
                                     }
                                     else{
