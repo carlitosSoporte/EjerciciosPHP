@@ -96,9 +96,9 @@
                     <form action="ejercicio5.php" method="POST">
                       <div class="row">
                         <div class="col-md-4">
-                          <div class="card">
+                          <div class="card bg-secondary">
                             <div class="card-body">
-                            <h5 class="text-info card-title">Usuario 1</h5>
+                            <h5 class="text-white card-title">Usuario 1</h5>
                               <img class="card-img-top w-100 img-fluid" src="recursos/stand.png" alt="stand">
                               <input type="text" class="form-control mt-3" placeholder="Nombre Completo" name="nombreStand" required>
                               <input type="text" class="form-control mt-2" placeholder="Direccion" name="direccionStand" required>
@@ -109,9 +109,9 @@
                           </div>
                         </div>
                         <div class="col-md-4">
-                          <div class="card">
+                          <div class="card bg-secondary">
                             <div class="card-body">
-                            <h5 class="text-info card-title">Usuario 2</h5>
+                            <h5 class="text-white card-title">Usuario 2</h5>
                               <img class="card-img-top w-100 img-fluid" src="recursos/butter.png" alt="butters">
                               <input type="text" class="form-control mt-3" placeholder="Nombre Completo" name="nombreButter" required>
                               <input type="text" class="form-control mt-2" placeholder="Direccion" name="direccionButter" required>
@@ -121,9 +121,9 @@
                           </div>
                         </div>
                         <div class="col-md-4">
-                          <div class="card">
+                          <div class="card bg-secondary">
                             <div class="card-body">
-                            <h5 class="text-info card-title">Usuario 3</h5>
+                            <h5 class="text-white card-title">Usuario 3</h5>
                               <img class="card-img-top w-100 img-fluid" src="recursos/erick.png" alt="erick">
                               <input type="text" class="form-control mt-3" placeholder="Nombre Completo" name="nombreErick" required>
                               <input type="text" class="form-control mt-2" placeholder="Direccion" name="direccionErick" required>
@@ -135,9 +135,9 @@
                       </div>
                       <div class="row justify-content-around mt-4">
                         <div class="col-md-4">
-                          <div class="card">
+                          <div class="card bg-secondary">
                             <div class="card-body">
-                            <h5 class="text-info card-title">Usuario 4</h5>
+                            <h5 class="text-white card-title">Usuario 4</h5>
                               <img class="card-img-top w-100 img-fluid" src="recursos/kyel.png" alt="kyel">
                               <input type="text" class="form-control mt-3" placeholder="Nombre Completo" name="nombreKyel" required>
                               <input type="text" class="form-control mt-2" placeholder="Direccion" name="direccionKyel" required>
@@ -147,9 +147,9 @@
                           </div>
                         </div>
                         <div class="col-md-4">
-                          <div class="card">
+                          <div class="card bg-secondary">
                             <div class="card-body">
-                              <h5 class="text-info card-title">Usuario 5</h5>
+                              <h5 class="text-white card-title">Usuario 5</h5>
                               <img class="card-img-top w-100 img-fluid" src="recursos/kenny.png" alt="kenny">
                               <input type="text" class="form-control mt-3" placeholder="Nombre Completo" name="nombreKenny" required>
                               <input type="text" class="form-control mt-2" placeholder="Direccion" name="direccionKenny" required>
@@ -168,7 +168,7 @@
             </div>
             <div class="row mt-3 justify-content-center">
               <div class="col-md-12">
-                <div class="card">
+                <div class="card bg-secondary">
                   <div class="card-body">
                     <div class="row">
                       <?php if(isset($_POST["btnEnviarDatos"])): ?>
@@ -183,14 +183,16 @@
                           $rutaSucursalA = "recursos/southPark.jpg";
                           $rutaSucursalB = "recursos/simpson.jpg";
                           $rutaSucursalC = "recursos/happy.jpg";
+                          $rutaStand ="recursos/stand.png";
+                          $rutaButter = "recursos/butter.png";
+                          $rutaErick = "recursos/erick.png";
+                          $rutaKyel = "recursos/kyel.png";
+                          $rutaKenny = "recursos/kenny.png";
+                          $imagenes = array($rutaStand,$rutaButter,$rutaErick,$rutaKyel,$rutaKenny);
 
                           for($i=0;$i<sizeof($salarios);$i++){
                               $sumatoriaSalarios += $salarios[$i];
                           }
-
-
-                          
-
 
                         ?>
                         <div class="col-md-8">
@@ -282,14 +284,14 @@
                                 <p></p>
                               </div>
                             </div>
-                            <div class="card">
+                            <div class="card mt-3">
                               <div class="card-body">
                                 <div class="row">
                                   <div class="col-md-6">
                                     <img src=<?=$fotoSegundoLugar?> alt="Sucursal con segundo mejor Salario" class="w-100 img-fluid">
                                   </div>
                                   <div class="col-md-6">
-                                    <div class="alert alert-info" role="alert">
+                                    <div class="alert alert-danger" role="alert">
                                       <h5 class="text-succes"><?= $sucursalSegundoLugar?> Segundo Lugar!</h5>
                                       <P class="tex-info">La sumatoria de salarios es de <?=$salarioSegundoLugar?></P>
                                     </div>
@@ -298,7 +300,7 @@
                                 <p></p>
                               </div>
                             </div>
-                            <div class="card">
+                            <div class="card mt-3">
                               <div class="card-body">
                                 <div class="row">
                                   <div class="col-md-6">
@@ -317,11 +319,22 @@
                           <?php endif ?>
                         </div>
                         <div class="col-md-4">
-                          <div class="card">
-                            <div class="card-body">
-                              
+                          <?php for($i=0; $i < sizeof($nombres); $i++): ?>
+                            <div class="card mt-3">
+                              <div class="card-body">
+                                <img src=<?=$imagenes[$i]?> alt=<?=$nombres[$i]?> class="w-100 img-fluid">
+                                <div class="alert alert-info mt-3" role="alert">
+                                  <h5 class="text-center text-info"><strong>Usuario <?=$i+1 ?></strong></h5>
+                                  <p class="mt-2">Nombre:  <strong><?=$nombres[$i] ?></strong></p>
+                                  <p class="mt-2">Dirrecion:  <strong><?=$direcciones[$i] ?></strong></p>
+                                  <p class="mt-2">Telefono:  <strong><?=$telefonos[$i] ?></strong></p>
+                                  <p class="mt-2">Salario: $<strong><?=$salarios[$i] ?></strong></p>
+                                </div>
+                                
+                              </div>
                             </div>
-                          </div>
+                          <?php endfor ?>
+                          
                         </div>
                         
                       <?php endif ?>
