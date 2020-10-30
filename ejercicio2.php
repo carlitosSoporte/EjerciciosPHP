@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="index.php">
                 <img src="recursos/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo"
                     loading="lazy">

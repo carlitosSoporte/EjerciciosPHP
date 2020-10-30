@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <a class="navbar-brand" href="index.php">
                     <img src="recursos/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo" loading="lazy">
                 </a>
@@ -73,7 +73,7 @@
                 <p>2020</p>
               </div>
               <div class="col-md-3 mt-5">
-              <img src="recursos/creador1.jpeg" alt="creador Carlos Diaz" class="img-fluid w-100 rounded-circle">
+              <img src="recursos/esteban2.png" alt="creador Carlos Diaz" class="img-fluid w-100 rounded-circle">
                 <p>Esteban Barrientos ©</p>
                 <p>EstebanBarrientos@gmail.com</p>
                 <p>Medellin - Colombia</p>

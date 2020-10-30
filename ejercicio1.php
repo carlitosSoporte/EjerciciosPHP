@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <a class="navbar-brand" href="index.php">
                     <img src="recursos/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo" loading="lazy">
                 </a>
@@ -63,7 +63,7 @@
           <div class="container">
             <div class="row mt-5 justify-content-center">
               <div class="col-md-4">
-                <div class="card">
+                <div class="card mt-5">
                   <img class="card-img-top w-100 img-fluid" src="recursos/pensando.jpg" alt="pensando">
                   <div class="card-body">
                     <h5 class="card-text text-info text-center">Ejercicio 1</h5>
@@ -79,7 +79,7 @@
                 </div>     
               </div>
               <div class="col-md-8">
-                  <div class="card text-center">
+                  <div class="card text-center mt-5">
                       <div class="card-body">
                         <h4 class="text-info">CALCULADORA</h4>
                         <img class="card-img-top w-100 img-fluid col-md-6" src="recursos/calculadora.jpg" alt="calculadora">

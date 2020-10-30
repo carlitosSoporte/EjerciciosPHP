@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <a class="navbar-brand" href="index.php">
                     <img src="recursos/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo" loading="lazy">
                 </a>
@@ -62,7 +62,7 @@
         <main>
           <div class="container">
             <div class="row justify-content-center mt-5">
-              <div class="col-md-12">
+              <div class="col-md-12 mt-5">
                 <div class="card">
                   <div class="row">
                     <div class="col-md-4">
