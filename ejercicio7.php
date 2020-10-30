@@ -19,7 +19,7 @@
             
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                         <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
@@ -40,19 +40,19 @@
                         </li>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Ejercicios 6-10
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="ejercicio1.php">Ejercicio 6</a>
+                                <a class="dropdown-item" href="ejercicio6.php">Ejercicio 6</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio2.php">Ejercicio 7</a>
+                                <a class="dropdown-item active" href="ejercicio7.php">Ejercicio 7</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio3.php">Ejercicio 8</a>
+                                <a class="dropdown-item" href="ejercicio8.php">Ejercicio 8</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio4.php">Ejercicio 9</a>
+                                <a class="dropdown-item" href="ejercicio9.php">Ejercicio 9</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="ejercicio5.php">Ejercicio 10</a>
+                                <a class="dropdown-item" href="ejercicio10.php">Ejercicio 10</a>
                             </div>
                         </li>
                     </ul>
@@ -60,7 +60,7 @@
             </nav>
         </header>
         <main>
-        
+          <h1 class="text-danger mt-5 text-center">En construccion...</h1>
         </main>
         <footer class="bg-dark text-white mt-5">
           <div class="contaner">
